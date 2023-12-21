@@ -1,6 +1,6 @@
-**"# Task-1" **
+**Task-1**
 
-#HTTP1 Vs HTTP2
+# HTTP1 Vs HTTP2
 
 **HTTP** stands for _hypertext transfer protocol_, and it is the basis for almost all web applications. More specifically, HTTP is the method computers and servers use to request and send information.
 
@@ -16,26 +16,37 @@ HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.
 
 **Prioritization**: Prioritization refers to the order in which pieces of content are loaded. Prioritization affects a webpage's load time. For example, certain resources, like large files, may block the rest of the page from loading if they have to load first. More of the page can load at once if these render-blocking resources load last. In HTTP/2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1.
 
-###HTTP/1.1###
+### HTTP/1.1:
 
 +HTTP (HOL)Head of Line Blocking problem.
+
 +Non-implementation of requests pipelining for request multiplexing.
+
 +Opening of multiple TCP connections for requesting multiple resources.
+
 +Textual nature of data transfer.
+
 +Long HTTP headers.
+
 +Numerous Workarounds to overcome above HTTP problems.
+
 +Slow web page loading speed.
 
-###HTTP/2###
+### HTTP/2
 
 +It’s a binary protocol instead of textual.
+
 +HTTP/2 is fully multiplexed
+
 +It used header compression HPACK to reduce the overhead size
+
 +It allows servers to “push” responses proactively into client caches instead of waiting for a new request for each resource.
+
 +Low overhead in parsing data.
+
 +It’s widely supported by browsers. As a basic internet technology, protocol HTTP/2 must be supported by the current version of your browser to work well.
 
-#Objects and its internal representation in javascript#
+# Objects and its internal representation in javascript
 
 In javascript, Objects, data types such as numbers, strings, and booleans are distinct from primitive datatypes. Unlike Primitive data types which can only contain one value, objects can contain multiple values in the form of key-value pairs. These keys can be either variables or functions and are referred to as properties and methods, respectively, within the object's context.
 
@@ -146,4 +157,5 @@ Most objects contain all their properties in a single block of memory. All block
 The JavaScript standard allows developers to define objects in a very flexible way, and it is hard to come up with an efficient representation that works for everything. An object is essentially a collection of properties: basically key-value pairs. You can access properties using two different kinds of expressions:
 
 +obj.prop
+
 +obj[“prop”]
