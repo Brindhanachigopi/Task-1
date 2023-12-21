@@ -18,33 +18,33 @@ HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.
 
 ### HTTP/1.1:
 
-+HTTP (HOL)Head of Line Blocking problem.
++ HTTP (HOL)Head of Line Blocking problem.
 
-+Non-implementation of requests pipelining for request multiplexing.
++ Non-implementation of requests pipelining for request multiplexing.
 
-+Opening of multiple TCP connections for requesting multiple resources.
++ Opening of multiple TCP connections for requesting multiple resources.
 
-+Textual nature of data transfer.
++ Textual nature of data transfer.
 
-+Long HTTP headers.
++ Long HTTP headers.
 
-+Numerous Workarounds to overcome above HTTP problems.
++ Numerous Workarounds to overcome above HTTP problems.
 
-+Slow web page loading speed.
++ Slow web page loading speed.
 
 ### HTTP/2
 
-+It’s a binary protocol instead of textual.
++ It’s a binary protocol instead of textual.
 
-+HTTP/2 is fully multiplexed
++ HTTP/2 is fully multiplexed
 
-+It used header compression HPACK to reduce the overhead size
++ It used header compression HPACK to reduce the overhead size
 
-+It allows servers to “push” responses proactively into client caches instead of waiting for a new request for each resource.
++ It allows servers to “push” responses proactively into client caches instead of waiting for a new request for each resource.
 
-+Low overhead in parsing data.
++ Low overhead in parsing data.
 
-+It’s widely supported by browsers. As a basic internet technology, protocol HTTP/2 must be supported by the current version of your browser to work well.
++ It’s widely supported by browsers. As a basic internet technology, protocol HTTP/2 must be supported by the current version of your browser to work well.
 
 # Objects and its internal representation in javascript
 
@@ -156,6 +156,6 @@ Most objects contain all their properties in a single block of memory. All block
 
 The JavaScript standard allows developers to define objects in a very flexible way, and it is hard to come up with an efficient representation that works for everything. An object is essentially a collection of properties: basically key-value pairs. You can access properties using two different kinds of expressions:
 
-+obj.prop
++ obj.prop
 
-+obj[“prop”]
++ obj[“prop”]
